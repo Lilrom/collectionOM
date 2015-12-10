@@ -1,0 +1,30 @@
+albums:
+    path:     /
+    defaults: { _controller: "AdminBundle:Album:index" }
+
+albums_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:Album:show" }
+
+albums_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Album:new" }
+
+albums_create:
+    path:     /create
+    defaults: { _controller: "AdminBundle:Album:create" }
+    methods:  POST
+
+albums_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:Album:edit" }
+
+albums_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminBundle:Album:update" }
+    methods:  [POST, PUT]
+
+albums_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:Album:delete" }
+    methods:  [POST, DELETE]
